@@ -183,3 +183,17 @@ Any issues or suggestions can be reported on the [issue tracker](https://github.
 - [Tailwind CSS](https://tailwindcss.com/) for the styling
 - [Vite](https://vitejs.dev/) for the build tool
 - [Bun](https://bun.sh/) for the package manager
+
+### Screenshots
+
+Init
+![Init](preview_images/Init.png)
+
+Song
+![Song](preview_images/Song.png)
+
+Compression Manager
+![Compression Manager](preview_images/Compression.png)
+
+Project
+![Project](preview_images/Project.png)
