@@ -1,0 +1,146 @@
+.song-editor {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #9ba657;
+  color: #2f2f2f;
+  height: 100%;
+}
+
+.song-rows {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow-y: auto;
+}
+
+.header-row,
+.song-row {
+  display: flex;
+  gap: 10px;
+  padding: 4px 8px;
+  font-family: monospace;
+}
+
+.header-row {
+  font-weight: bold;
+  background: rgba(47, 47, 47, 0.2);
+}
+
+.song-row {
+  display: grid;
+  grid-template-columns: 40px repeat(4, 1fr) 60px 60px;
+  gap: 4px;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+}
+
+.song-row:hover {
+  background: rgba(47, 47, 47, 0.2);
+}
+
+.song-row.active {
+  background: rgba(47, 47, 47, 0.3);
+  border-left: 2px solid #2f2f2f;
+}
+
+.song-row.playing {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background: rgba(47, 47, 47, 0.3);
+  }
+  50% {
+    background: rgba(47, 47, 47, 0.4);
+  }
+  100% {
+    background: rgba(47, 47, 47, 0.3);
+  }
+}
+
+.song-row.selected {
+  background: rgba(47, 47, 47, 0.2);
+  font-weight: bold;
+}
+
+.row-number {
+  width: 40px;
+}
+
+.chain-cell {
+  width: 40px;
+  text-align: center;
+}
+
+.groove-cell {
+  width: 40px;
+  text-align: center;
+}
+
+.tempo-cell {
+  width: 50px;
+  text-align: right;
+}
+
+.row-editor {
+  width: 300px;
+  padding: 15px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+}
+
+.row-editor h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.channel-controls {
+  margin-bottom: 20px;
+}
+
+.editor-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.editor-control label {
+  width: 80px;
+}
+
+.editor-control input {
+  width: 60px;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.hex-value {
+  font-family: monospace;
+  color: rgba(47, 47, 47, 0.7);
+}
+
+.row-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.row-actions button {
+  flex: 1;
+  padding: 8px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+.row-actions button:hover {
+  background: #3f3f3f;
+} 

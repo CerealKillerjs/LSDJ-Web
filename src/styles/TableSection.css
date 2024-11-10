@@ -1,0 +1,86 @@
+.table-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px 40px;
+  gap: 5px;
+  padding: 4px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.2);
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px 40px;
+  gap: 5px;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  cursor: pointer;
+  align-items: center;
+}
+
+.table-row.selected {
+  background: rgba(47, 47, 47, 0.2);
+  font-weight: bold;
+}
+
+.step-number {
+  font-family: monospace;
+  text-align: center;
+}
+
+.effects-list {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.effect-item {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.effect-item select {
+  width: 60px;
+  padding: 2px 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+  font-size: 11px;
+}
+
+.effect-item input,
+.transpose-input,
+.volume-input {
+  width: 30px;
+  padding: 2px 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+  font-size: 11px;
+  text-align: center;
+}
+
+.remove-effect,
+.add-effect {
+  padding: 2px 6px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.remove-effect:hover,
+.add-effect:hover {
+  background: #3f3f3f;
+} 

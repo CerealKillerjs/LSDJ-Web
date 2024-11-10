@@ -1,0 +1,109 @@
+.playback-controls {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  padding: 8px;
+  background: #9ba657;
+  color: #2f2f2f;
+  font-family: monospace;
+  font-size: 12px;
+  height: 40px;
+}
+
+.transport-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.transport-controls button {
+  padding: 4px 8px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  font-size: 11px;
+  cursor: pointer;
+  min-width: 40px;
+}
+
+.transport-controls button.active {
+  background: #4f4f4f;
+  font-weight: bold;
+}
+
+.mode-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.control-group label {
+  min-width: 40px;
+  font-size: 11px;
+}
+
+.control-group input,
+.control-group select {
+  width: 60px;
+  padding: 2px 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+  font-size: 11px;
+  height: 20px;
+}
+
+.position-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.position-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.position-row label {
+  font-size: 11px;
+}
+
+.position-row span {
+  font-family: monospace;
+  background: rgba(47, 47, 47, 0.2);
+  padding: 1px 2px;
+  border-radius: 2px;
+  font-size: 11px;
+}
+
+.loop-controls,
+.position-controls {
+  display: none;
+}
+
+.playback-controls.expanded {
+  height: auto;
+  grid-template-columns: 1fr;
+  
+  .loop-controls,
+  .position-controls {
+    display: flex;
+  }
+}
+
+.expand-button {
+  padding: 2px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #2f2f2f;
+  font-size: 10px;
+} 

@@ -1,0 +1,135 @@
+.speech-editor {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 10px;
+  padding: 10px;
+  height: 100%;
+  background: #9ba657;
+  color: #2f2f2f;
+  font-family: monospace;
+}
+
+.phonemes-panel {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.2);
+}
+
+.phonemes-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.phoneme-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 8px;
+  background: rgba(47, 47, 47, 0.1);
+  cursor: pointer;
+}
+
+.phoneme-item.selected {
+  background: rgba(47, 47, 47, 0.2);
+  font-weight: bold;
+}
+
+.phoneme-editor {
+  grid-row: 1;
+  grid-column: 2;
+  padding: 10px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.formants-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formant-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.formant-control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formant-control input {
+  width: 100%;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.duration-control {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.speech-controls {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+}
+
+.speech-controls input {
+  flex: 1;
+  padding: 4px 8px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+button {
+  padding: 4px 8px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3f3f3f;
+}
+
+button.active {
+  background: #4f4f4f;
+  font-weight: bold;
+} 

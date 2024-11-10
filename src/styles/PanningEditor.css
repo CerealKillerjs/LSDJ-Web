@@ -1,0 +1,101 @@
+.panning-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #9ba657;
+  color: #2f2f2f;
+  height: 100%;
+}
+
+.channel-panning {
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.channel-panning h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.pan-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.pan-control label {
+  width: 80px;
+  font-family: monospace;
+}
+
+.pan-buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.pan-buttons button {
+  width: 30px;
+  height: 30px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.pan-buttons button.active {
+  background: #4f4f4f;
+  font-weight: bold;
+}
+
+.pan-settings {
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.vibrato-settings {
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.vibrato-settings h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.setting-row label {
+  width: 80px;
+  font-family: monospace;
+}
+
+.setting-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.setting-row input[type="range"] {
+  flex: 1;
+  height: 20px;
+}
+
+.value-display {
+  width: 30px;
+  text-align: center;
+  font-family: monospace;
+  background: rgba(47, 47, 47, 0.1);
+  padding: 2px 4px;
+  border-radius: 2px;
+} 

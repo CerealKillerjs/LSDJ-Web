@@ -1,0 +1,254 @@
+.lsdj-interface {
+  width: 100%;
+  height: 100vh;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.lsdj-screen {
+  width: 800px;
+  height: 600px;
+  background: #9ba657; /* Color verde característico de Game Boy */
+  border: 20px solid #2f2f2f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  background: #2f2f2f;
+  color: #9ba657;
+  font-family: monospace;
+  font-size: 12px;
+  height: 24px;
+}
+
+.screen-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.screen-info {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+}
+
+.screen-info span {
+  min-width: 60px;
+  text-align: right;
+}
+
+.screen-content {
+  flex: 1;
+  overflow: auto;
+}
+
+.screen-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-top: 2px solid #2f2f2f;
+  margin-top: 10px;
+}
+
+.lsdj-controls {
+  margin-top: 20px;
+  width: 800px;
+}
+
+.control-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.screen-button {
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.screen-button:hover {
+  background: #3f3f3f;
+}
+
+.screen-button.active {
+  background: #4f4f4f;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Modificaciones al estilo del Tracker para que coincida con la estética de LSDJ */
+.tracker {
+  background: transparent;
+}
+
+.cell {
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  color: #2f2f2f;
+}
+
+.cell.active {
+  background: rgba(47, 47, 47, 0.2);
+  color: #2f2f2f;
+  font-weight: bold;
+}
+
+.wave-table-editor canvas {
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+}
+
+/* Cursor estilo LSDJ */
+.cursor {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #2f2f2f;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.audio-loading,
+.audio-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #9ba657;
+  color: #2f2f2f;
+  font-family: monospace;
+  text-align: center;
+  padding: 20px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(47, 47, 47, 0.3);
+  border-top: 4px solid #2f2f2f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+.audio-error h2 {
+  margin-bottom: 15px;
+  color: #ff0000;
+}
+
+.audio-error button {
+  margin: 15px 0;
+  padding: 8px 16px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.error-hint {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.audio-init {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #2f2f2f;
+  font-family: monospace;
+  text-align: center;
+  padding: 20px;
+}
+
+.audio-init h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2f2f2f;
+}
+
+.audio-init p {
+  margin-bottom: 20px;
+  color: #2f2f2f;
+}
+
+.init-button {
+  padding: 15px 30px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+.init-button:hover {
+  background: #3f3f3f;
+}
+
+.audio-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #2f2f2f;
+  font-family: monospace;
+  text-align: center;
+  padding: 20px;
+}
+
+.audio-error h2 {
+  margin-bottom: 15px;
+  color: #ff0000;
+}
+
+.audio-error button {
+  margin: 15px 0;
+  padding: 8px 16px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.error-hint {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 10px;
+  color: #2f2f2f;
+}
+  

@@ -1,0 +1,62 @@
+.midi-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #9ba657;
+  color: #2f2f2f;
+  height: 100%;
+}
+
+.settings-section {
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.settings-section h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.setting-row label {
+  width: 100px;
+  font-family: monospace;
+}
+
+.setting-row select,
+.setting-row input[type="number"] {
+  width: 120px;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.setting-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.setting-row input[type="range"] {
+  flex: 1;
+  height: 20px;
+}
+
+.setting-row select {
+  cursor: pointer;
+}
+
+.setting-row select option {
+  background: #9ba657;
+  color: #2f2f2f;
+} 

@@ -1,0 +1,66 @@
+.wave-screen {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  padding: 20px;
+  height: 100%;
+}
+
+.wave-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wave-editor h3,
+.wave-visualizer h3 {
+  color: #2f2f2f;
+  font-family: monospace;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.2);
+}
+
+.wave-table {
+  flex: 1;
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.wave-visualizer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+}
+
+.wave-preview {
+  flex: 1;
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.preview-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.preview-controls button {
+  padding: 8px 16px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.preview-controls select {
+  padding: 8px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+} 

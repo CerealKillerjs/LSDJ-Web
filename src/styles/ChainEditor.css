@@ -1,0 +1,94 @@
+.chain-editor {
+  padding: 10px;
+  background: #9ba657;
+  color: #2f2f2f;
+  font-family: monospace;
+}
+
+.chain-header {
+  display: grid;
+  grid-template-columns: 40px 60px 60px;
+  gap: 5px;
+  padding: 5px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.2);
+}
+
+.chain-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.chain-step {
+  display: grid;
+  grid-template-columns: 40px 60px 60px;
+  gap: 5px;
+  padding: 2px;
+  align-items: center;
+  background: rgba(47, 47, 47, 0.1);
+}
+
+.chain-step input {
+  width: 100%;
+  padding: 2px 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+  color: #2f2f2f;
+  text-align: center;
+}
+
+.step-number {
+  text-align: center;
+}
+
+.step-phrase {
+  width: 40px;
+}
+
+.step-transpose {
+  width: 40px;
+  text-align: right;
+}
+
+.step-table {
+  width: 30px;
+  text-align: right;
+}
+
+.step-editor {
+  width: 250px;
+  padding: 15px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+}
+
+.step-editor h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.editor-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.editor-control label {
+  width: 80px;
+}
+
+.editor-control input {
+  width: 60px;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.hex-value {
+  font-family: monospace;
+  color: rgba(47, 47, 47, 0.7);
+} 

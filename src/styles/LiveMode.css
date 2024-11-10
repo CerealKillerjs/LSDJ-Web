@@ -1,0 +1,148 @@
+.live-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #9ba657;
+  color: #2f2f2f;
+  height: 100%;
+}
+
+.channel-controls {
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.channel-controls h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.channel-controls button {
+  padding: 8px 16px;
+  margin-right: 5px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.channel-controls button.active {
+  background: #4f4f4f;
+  font-weight: bold;
+}
+
+.octave-controls {
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.octave-controls h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-row button {
+  width: 30px;
+  height: 30px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.control-row span {
+  width: 30px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.sequence-controls {
+  flex: 1;
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+  overflow-y: auto;
+}
+
+.sequence-controls h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.sequence-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.sequence-row span {
+  font-family: monospace;
+}
+
+.sequence-row button {
+  width: 30px;
+  height: 30px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.sequence-row button.active {
+  background: #4f4f4f;
+  font-weight: bold;
+}
+
+.key-bindings {
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.key-bindings h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.binding-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.binding-row .key {
+  width: 40px;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.2);
+  text-align: center;
+  font-family: monospace;
+  border-radius: 2px;
+}
+
+.binding-row .action {
+  flex: 1;
+  font-family: monospace;
+}
+
+.binding-row .parameter {
+  width: 30px;
+  text-align: center;
+  font-family: monospace;
+  background: rgba(47, 47, 47, 0.2);
+  padding: 2px 4px;
+  border-radius: 2px;
+} 

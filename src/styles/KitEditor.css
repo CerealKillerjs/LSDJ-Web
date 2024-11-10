@@ -1,0 +1,117 @@
+.kit-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #9ba657;
+  color: #2f2f2f;
+  height: 100%;
+}
+
+.kit-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+}
+
+.kit-info input {
+  flex: 1;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.sample-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow-y: auto;
+}
+
+.sample-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  background: rgba(47, 47, 47, 0.1);
+  cursor: pointer;
+}
+
+.sample-item.selected {
+  background: rgba(47, 47, 47, 0.2);
+  font-weight: bold;
+}
+
+.sample-number {
+  width: 30px;
+  font-family: monospace;
+}
+
+.sample-name {
+  flex: 1;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sample-item button {
+  padding: 4px 8px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.sample-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sample-controls button {
+  padding: 8px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.sample-editor {
+  padding: 15px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.control-group label {
+  width: 100px;
+  font-family: monospace;
+}
+
+.control-group input {
+  width: 80px;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.loop-controls {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(47, 47, 47, 0.2);
+} 

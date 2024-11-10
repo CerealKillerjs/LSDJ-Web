@@ -1,0 +1,192 @@
+.phrase-editor {
+  padding: 10px;
+  background: #9ba657;
+  color: #2f2f2f;
+  font-family: monospace;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.phrase-header {
+  display: grid;
+  grid-template-columns: 40px 100px 40px 40px;
+  gap: 5px;
+  padding: 5px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.2);
+  position: sticky;
+  top: 0;
+  background: #9ba657;
+  z-index: 1;
+}
+
+.phrase-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.phrase-step {
+  display: grid;
+  grid-template-columns: 40px 100px 40px 40px;
+  gap: 5px;
+  padding: 4px;
+  align-items: center;
+  background: rgba(47, 47, 47, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+
+.phrase-step:hover {
+  background: rgba(47, 47, 47, 0.15);
+}
+
+.phrase-step.selected {
+  background: rgba(47, 47, 47, 0.2);
+  border-left: 2px solid #2f2f2f;
+}
+
+.step-number {
+  text-align: center;
+  font-weight: bold;
+}
+
+.note-input {
+  display: flex;
+  gap: 2px;
+}
+
+.note-input select,
+.hex-input {
+  padding: 2px 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+  color: #2f2f2f;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hex-input {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.note-input select:hover,
+.hex-input:hover {
+  background: rgba(47, 47, 47, 0.15);
+}
+
+.note-input select:focus,
+.hex-input:focus {
+  outline: none;
+  border-color: #2f2f2f;
+}
+
+.phrase-controls {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+}
+
+.phrase-controls button {
+  padding: 8px 16px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.phrase-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow-y: auto;
+}
+
+.phrase-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 2px;
+}
+
+.phrase-step.selected {
+  background: rgba(47, 47, 47, 0.2);
+}
+
+.note-selector select {
+  width: 80px;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.volume-control input {
+  width: 50px;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.effects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex: 1;
+}
+
+.effect {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(47, 47, 47, 0.15);
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.effect select {
+  width: 70px;
+  padding: 2px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.effect input {
+  width: 40px;
+  padding: 2px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.effect button {
+  width: 20px;
+  height: 20px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.effects-list > button {
+  padding: 4px 8px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+} 

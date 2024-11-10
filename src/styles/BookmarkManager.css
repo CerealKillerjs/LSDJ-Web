@@ -1,0 +1,143 @@
+.bookmark-manager {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #9ba657;
+  color: #2f2f2f;
+  height: 100%;
+}
+
+.bookmark-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bookmark-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bookmark-header h3 {
+  font-family: monospace;
+}
+
+.bookmark-header button {
+  width: 30px;
+  height: 30px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.bookmark-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: rgba(47, 47, 47, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bookmark-item.selected {
+  background: rgba(47, 47, 47, 0.2);
+  font-weight: bold;
+}
+
+.bookmark-item.red { border-left: 4px solid #ff4444; }
+.bookmark-item.green { border-left: 4px solid #44ff44; }
+.bookmark-item.blue { border-left: 4px solid #4444ff; }
+.bookmark-item.yellow { border-left: 4px solid #ffff44; }
+
+.bookmark-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bookmark-name {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.bookmark-position {
+  font-family: monospace;
+  font-size: 0.9em;
+  color: rgba(47, 47, 47, 0.7);
+}
+
+.bookmark-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.bookmark-actions button {
+  width: 24px;
+  height: 24px;
+  background: #2f2f2f;
+  color: #9ba657;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.bookmark-editor {
+  width: 300px;
+  background: rgba(47, 47, 47, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.bookmark-editor h3 {
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.editor-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.editor-row label {
+  width: 80px;
+  font-family: monospace;
+}
+
+.editor-row input,
+.editor-row select,
+.editor-row textarea {
+  flex: 1;
+  padding: 4px;
+  background: rgba(47, 47, 47, 0.1);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  font-family: monospace;
+}
+
+.editor-row textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.delete-button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 15px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #ff6666;
+} 
