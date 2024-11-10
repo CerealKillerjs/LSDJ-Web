@@ -160,8 +160,8 @@ bun run dev
 ### Building for Production
 ```bash
 bun run build
-
-## 🤝 Contributing
+```
+### 🤝 Contributing
 
 If you'd like to contribute to this project, please follow these steps:
 
